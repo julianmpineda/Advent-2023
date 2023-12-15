@@ -7,7 +7,7 @@ public class day1 {
         List<String> calibration = new ArrayList<String>();
 
         try {
-            File myObj = new File("src/data/data1.txt");
+            File myObj = new File("src/data/data01.txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 calibration.add(myReader.nextLine());
