@@ -7,7 +7,7 @@ public class day2 {
         List<String> bag = new ArrayList<String>();
 
         try {
-            File myObj = new File("src/data/data2.txt");
+            File myObj = new File("src/data/data02.txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 bag.add(myReader.nextLine());
