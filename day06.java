@@ -1,4 +1,4 @@
-public class day07 {
+public class day06 {
     public static void main(String[] args) {
 
         System.out.println("Part 1: " + part1() + " ways");
