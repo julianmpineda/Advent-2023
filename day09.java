@@ -20,11 +20,10 @@ public class day09 {
             String[] sequenceStr = history.get(i).split(" ");
             int[] seqOne = new int[sequenceStr.length];
             int[] seqTwo = new int[sequenceStr.length];
-            int end = seqTwo.length -1;
 
             for(int j = 0; j < seqOne.length; j++) {
                 seqOne[j] = Integer.parseInt(sequenceStr[j]);
-                seqTwo[end - j] = Integer.parseInt(sequenceStr[j]);
+                seqTwo[seqTwo.length -1 - j] = Integer.parseInt(sequenceStr[j]);
             }
 
             sumOne += next(seqOne);
@@ -36,7 +35,6 @@ public class day09 {
     }
 
     public static int next(int[] sequence){
-        int sum = 0;
         int[] subSeq = new int[sequence.length-1];
         boolean end = true;
 
